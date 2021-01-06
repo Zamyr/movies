@@ -21,7 +21,7 @@ const Card = props => {
 					<View style={styles.infoBox}>
 						<Text style={styles.title}>{props.item.title}</Text>
 						<View style={styles.info}>
-							<Text style={styles.release}>{format(new Date(props.item.release_date), 'dd LLLL yyyy')}</Text>
+							<Text style={styles.release}>{format(new Date(props.item.release_date), 'dd LLL yyyy')}</Text>
 							<View style={styles.vote}>
 								<Icon name='star-outline' type='material-community' color='yellow' size={18} iconStyle={{paddingTop: 3, marginRight: -2}} />
 								<Text style={styles.text}>{props.item.vote_average}</Text>
